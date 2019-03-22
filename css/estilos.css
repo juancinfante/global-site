@@ -1,0 +1,697 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+}
+body{
+    background: #31353D;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+}
+.container-flex{
+    display: flex;
+}
+.column{
+    width: 100%;
+}
+.column-20{
+    width: 20%;
+}
+.column-25{
+    width: 25%;
+}
+.column-33{
+    width: 33%;
+}
+.column-50{
+    width: 50%;
+}
+.column-80{
+    width: 80%;
+}
+.header{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background: #31353D;
+}
+.brand{
+    display: flex;
+    width: 100%;
+    color: #fff;
+    top: 90px;
+    position: absolute;
+}
+.toggle{
+    display: none;
+}
+.toggle i{
+    cursor: pointer;
+}
+
+.icon{
+    background: #15C1C6;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size: 40px;
+    text-align: center;
+}
+.icon i{
+   padding-top: 13px;
+}
+.txt{
+    width: 300px;
+    margin-left: 5px;
+}
+.txt h1, h4{
+    font-family: 'Raleway';
+    font-weight: 300;
+}
+.txt h1{
+    font-size: 70px;
+    margin-top: -10px;
+}
+.txt h4{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 5px;
+    color: #C8C9CB;
+}
+.menu{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    list-style: none; 
+    transition: all .5s;
+}
+.menu li{
+    background: #B6B3A6;
+    padding: 30px 50px;
+    transition: all .6s;
+}
+.menu li:hover{
+    cursor: pointer;
+    background: #15C1C6;
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+    
+.menu.active{
+    left: 0;
+}
+
+/***** BANNER *****/
+
+.banner{
+    position: relative;
+    background-image: url(../img/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 640px;
+}
+
+/***** SECCION  1 ****/
+
+.seccion{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+    background: #3F4248;
+}
+.seccion-txt{
+    position: relative;
+    width: 550px;
+    text-align: left;
+    left: 30px;
+    top: 60px;
+    color: #fff;
+}
+.seccion-txt h2,h6{
+    font-family: 'Raleway';
+    font-weight: 500;
+}
+.seccion-txt h2{
+    font-size: 35px
+}
+.seccion-txt h6{
+    font-size: 18px;
+    color: #B3B5B7;
+}
+.centrado{
+    display: flex;
+    justify-content: center;
+}
+.tel{
+    display: flex;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    height: 50px;
+    color: #fff;
+}
+.tel i{
+    background: #B6B3A6;
+    font-size: 40px;
+    position: absolute;
+    padding: 5px;
+}
+.tel p{
+    margin-left: 50px;
+    padding: 18px 10px;
+    background: #15C1C6;
+}
+
+/***** SECCION  2 *****/
+.seccion2-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info{
+    width: 100%;
+    color: #fff;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.info-header{
+    display: flex;
+    height: 70px;
+}
+.info-txt h2, h3{
+     font-family:'Raleway';
+    font-weight: 300;
+}
+.info-icono{
+    background: #15C1C6;
+    width: 70px;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 10px;
+    
+}
+.info-icono i{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.info-txt{
+    font-size: 20px;
+    padding-left: 20px;
+}
+.info-txt h2{
+    margin-top: 6px;
+}
+
+.color{
+    letter-spacing: .5px;
+    font-size: 30px;
+    margin-top: -4px;
+    color: #15C1C6;
+}
+.info-p{
+    color: #B1AC9F;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+.info-btn{
+    display: flex;
+}
+.info-btn-txt{
+    background: #B1AC9F;
+    text-align: center;
+    margin-left: 10px;
+}
+.info-btn-txt h3{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+.info-btn-icono{
+    background: #15C1C6;
+    width: 40px;
+    text-align: center;
+}
+.info-btn-icono i{
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+/***** SECCION  3 *****/
+
+.seccion3-coment{
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    background: #C5C1B6;
+}
+.coment-container{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    align-items:center;;
+}
+.icono-container{
+    position: relative;
+    display: flex;
+    width: 200px;
+    padding-left: 100px;
+}
+.icono{
+    width: 90px;
+    height: 90px;
+    font-size: 50px;
+    text-align: center;
+    border-radius: 50%;
+}
+.icono i{
+    margin-top: 20px;
+}
+.icono:nth-child(1){
+    background: #283135;
+    color: #fff;
+}
+.icono:nth-child(2){
+    background: #15C1C6;
+    color: #31353D;
+    position: relative;
+    left: -19px;
+}
+.txt-container{
+    position: relative;
+}
+.txt-container h2{
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: .5px;
+}
+.txt-container h3{
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    top: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/****** SECCION 4 *****/ 
+.seccion4{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.info-contact-txt{
+    margin-bottom: 50px;
+}
+.info-contact-txt h1{
+    color: #15C1C6;
+    font-weight: 300;
+    font-size: 50px;
+}
+.info-contact h3{
+    color: #fff;
+}
+.info-contact-p img{
+    height: 200px;
+    float: left;
+    margin-right: 30px;
+}
+.info-contact-p h3{
+    font-size: 16px;
+    color: #B9B8BD;
+    margin-bottom: 15px;
+}
+.info-contact-p h2{
+    color: #15C1C6;
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.info-contact-p p{
+    color: #B1AC9F;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 2;
+}
+.agenda-tittle h1{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+.agenda-container{
+    display: flex;
+}
+.agenda-info{
+    margin-top: 20px;
+    display: flex;
+    margin-left: 50px;
+}
+.agenda-info .date{
+    text-align: center;
+    width: 60px;
+    height: 70px;
+    background: #15C1C6;
+    padding: 0px 10px;
+    margin-right: 10px;
+}
+.agenda-info .date h1{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+}
+.agenda-info .date h3{
+    margin-top: -5px;
+}
+.date-txt h2{
+    color: #15C1C6;
+    font-size: 20px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.date-txt h3{
+    color: #fff;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+/***** SECCION 5 *****/
+
+.seccion5{
+    margin-top: 100px;
+    background: #292C31;
+    padding-top: 100px;
+    width: 100%;
+}
+.column-seccion5{
+    display: flex;
+    flex-wrap: wrap;
+}
+.seccion5-info{
+    width: 100%;
+    color: #fff;
+    padding-left: 50px;
+}
+.active{
+    color: #15C1C6;
+}
+.seccion5-info h3{
+    margin-bottom: 30px;
+}
+.seccion5-info ul{
+    list-style: none;
+    color: #B9B8BD;
+    font-size: 13px;
+}
+.seccion5-info li{
+    padding: 5px 0;
+}
+.seccion5-info li i{
+    position: relative;
+    top: 4px;
+    font-size: 23px;
+    color: #15C1C6;
+    padding-right: 5px;
+}
+.seccion5-info li:hover{
+    color: #15C1C6;
+    cursor: pointer;
+}
+.footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    padding-bottom: 5px;
+}
+.footer-icon{
+    position: relative;
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    background: #15C1C6;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 15px;
+    text-align: center;
+}
+.footer-icon i{
+    position: relative;
+    top: 5px;
+}
+.footer h2{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.copr{
+    color:#B9B8BD;
+    font-weight: 100;
+}
+
+
+
+
+
+@media (max-width: 768px){
+    .header{
+        width: 100%;
+        height: 80px;
+    }
+    .brand{
+        width: 100%;
+        top: 5px;
+        
+    }
+    .toggle{
+        display: block;
+        font-size: 40px;
+        position: absolute;
+        right: 0;
+        margin: 15px 5px 0 0;
+    }
+    .txt h1{
+        font-size: 45px;
+        margin-top: 5px;
+    }
+    .txt h4{
+        font-size: 14px;
+    }
+    .icon{
+    background: #15C1C6;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+    .icon i{
+    padding-top: 10px;
+    }
+    
+    .menu{
+        display: block;
+        bottom: -324px;
+        width: 100%;
+        left: -100%;
+    }
+    .menu li{
+        padding: 20px;
+        text-align: center;
+        font-size: 12px;
+        transition: all 1s;
+    }
+    
+    /***** BANNER *****/
+    
+    .banner{
+        height: 300px;
+        width: 100%;
+    }
+    /***** SECCION  1 *****/
+    .column-50{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .seccion{
+        height: 110px;
+    }
+    .seccion-txt{
+    display: none;
+}
+    .seccion-txt h2{
+    font-size: 10px
+}
+    .seccion-txt h6{
+    font-size: 18px;
+}
+    .tel{
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 50p
+    color: #fff;
+}
+    /***** SECCION  2 *****/
+    
+    .column-25{
+        width: 100%;
+    }
+    .seccion2-container{
+        margin-top: 50px;
+    }
+    .info{
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    .info-icono{
+        margin-left: 10%;
+    }
+    .info p{
+        padding: 0px 30px;
+    }
+    .info-btn-txt{
+        margin-left: 10%;
+    }
+    
+    /****** SECCION 3 *****/ 
+    
+    .seccion3-coment
+    {
+    width: 100%;
+    margin: auto;
+    height: 150px;
+    background: #C5C1B6;
+    margin-top: 50px;
+}
+    
+    .coment-container{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .icono-container{
+        position: relative;
+        display: flex;
+        width: 200px;
+        padding: 10px 0 10px 160px;
+
+    }
+    .icono{
+        width: 55px;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    .txt-container{
+        position: relative;
+        text-align: center;
+    }
+    .txt-container h2{
+        font-size: 17px;
+    }
+    
+    /****** SECCION 4 *****/ 
+    
+    .info-contact-txt{
+    text-align: center;
+    margin-bottom: 0;
+}
+    .info-contact-p{
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+    .info-contact-p img{
+        height: 150px;
+    }
+    .info-contact-p h2{
+        font-size: 15px;
+    }
+    .info-contact-p p{
+        line-height: 20px;
+    }
+    .agenda-tittle h1{
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+    .agenda-container{
+        padding: 15px;
+    }
+    
+    /***** SECCION 5 *****/
+    
+    .seccion5-info{
+        
+    padding-left: 10px;
+}
+    .seccion5-info h3{
+    margin-top: 40px;
+        margin-bottom: 10px;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
